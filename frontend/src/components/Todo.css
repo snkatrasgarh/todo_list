@@ -1,0 +1,130 @@
+/* General container styling */
+.todo-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles */
+.title {
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.todo-table {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.todo-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.todo-table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Hover effect on rows */
+.todo-table tbody tr:hover {
+    background-color: #e2e6ea;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input and Select Styling */
+.todo-form input,
+.todo-form select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.todo-form input:focus,
+.todo-form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Form container */
+.todo-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .todo-container {
+        padding: 15px;
+    }
+
+    .todo-table th,
+    .todo-table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .todo-form input,
+    .todo-form select {
+        font-size: 12px;
+    }
+}
